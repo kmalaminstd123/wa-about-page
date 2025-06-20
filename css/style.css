@@ -1,0 +1,180 @@
+/*global css start*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+ol, li{
+    list-style-type: none;
+}
+
+/*global css end*/
+
+/* about us page css start */
+
+#about_us_page p{
+    font-weight: 400;
+}
+
+.about-text-top{
+    margin-bottom: 70px;
+}
+
+.about-sec-sub-head{
+    position: relative;
+}
+
+.about-sec-sub-head::after{
+    position: absolute;
+    content: '';
+    height: 3px;
+    width: 80px;
+    bottom: -15px;
+    background-color: #716027;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.image-with-text .img-side img{
+    border-radius: 5px;
+}
+
+/* .image-with-text .text-side p{
+    line-height: 1.8;
+    font-weight: 500;
+} */
+
+@media only screen and (max-width: 768px){
+    .mid-about-sec{
+        flex-direction: column-reverse;
+    }
+}
+
+.broch-download-sec{
+    margin: 80px 0;
+    padding: 50px 0;
+}
+
+.broch-download-sec p{
+    font-size: 25px;
+}
+
+.broch-download-sec a{
+    background-color: #716027;
+}
+
+@media only screen and (max-width: 768px){
+    .broch-download-sec a{
+        margin-top: 30px;
+    }
+
+    .broch-download-sec p{
+        font-size: 25px;
+    }
+}
+
+@media only screen and (max-width: 425px){
+    .broch-download-sec p{
+        font-size: 21px;
+    }
+}
+
+.broch-download-sec a:hover{
+    background-color: #716027;
+}
+
+.mission-vission-card{
+    box-shadow: 0 0 20px rgba(0,0,0,0.05);
+    padding: 40px;
+    transition: all 0.3s linear;
+    position: relative;
+    border-radius: 5px;
+    overflow: hidden;
+    background-color: #e5e5e5;
+}
+
+.mission-vission-card::before{
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    height: 5px;
+    width: 100%;
+    background-color: #716027;
+}
+
+.mission-vission-card:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    transition: all 0.3s linear;
+}
+
+.mv-card-icon{
+    font-size: 29px;
+}
+
+@media only screen and (max-width: 375px){
+    .mission-vission-card{
+        padding: 20px;
+    }
+}
+
+/* about us page css end */
+
+/* download btn css start */
+.ab-broch-download-btn {
+    position: relative;
+    padding: 15px 45px;
+    background-color: #716027;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    width: fit-content;
+    padding-left: 110px;
+}
+
+.ab-broch-download-btn:active, .ab-broch-download-btn:focus{
+    background-color: #716027 !important;
+    color: #fff !important;
+}
+
+.ab-broch-button-text {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.ab-broch-button-exmp-3{
+    position: relative;
+    overflow: visible;
+    border-radius: 5px;
+}
+
+.ab-broch-button-exmp-3 .download-icon{
+    position: absolute;
+    top: -21px;
+    left: 30px;
+    height: 65px;
+    width: 40px;
+}
+
+.ab-broch-button-exmp-3 .download-icon img{
+    height: 100%;
+    object-fit: cover;
+}
+
+.ab-broch-button-exmp-3 .button-text{
+    padding-left: 60px;
+}
